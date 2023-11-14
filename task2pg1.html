@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">TO DO LIST</h1>
+        <form id="taskForm">
+            <label for="priority">Priority:</label>
+            <select name="priority" id="priority">
+                <option value="High Priority">High Priority</option>
+                <option value="Medium Priority">Medium Priority</option>
+                <option value="Low Priority">Low Priority</option>
+            </select>
+
+            <label for="label">Label:</label>
+            <select name="label" id="label">
+                <option value="Office Work">Office Work</option>
+                <option value="Home">Home</option>
+                <option value="Personal Work">Personal Work</option>
+                <option value="Study">Study</option>
+            </select>
+
+            <label for="deadline">Deadline:</label>
+            <input type="text" id="deadline" name="deadline" placeholder="Enter Deadline">
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" placeholder="Enter Task Description">
+
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

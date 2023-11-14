@@ -1,0 +1,109 @@
+*{
+    background-color: rgb(184, 182, 178);
+}
+body{
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20 px;
+}
+h1{
+    text-align: center;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"], select{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button{
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    font-size: 28px;
+    color: maroon;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+button:after{
+    content: "";
+    background: red;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-left: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+button:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+.delete-button {
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: maroon;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+.task{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.task .task-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.task .task-header .priority{
+    font-weight: bold;
+}
+.task .task-header .label{
+    font-style: italic;
+}
+.task .task-body{
+    font-size: 14px;
+}
+.task .task-footer{
+    font-size: 12px;
+    color: palevioletred;
+}
+.text{
+    font-size: 36px;
+    color: rgb(241, 241, 17);
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+    From{text-shadow: 1px 2px 3px blue, 3px 2px 1px green,2px 3px 5px pink,4px 4px 3px brown}
+    To{text-shadow: 1px 0px 4px green, 2px 2px 4px orange,2px 4px 2px deeppink,1px 3px 1px gray}
+}
